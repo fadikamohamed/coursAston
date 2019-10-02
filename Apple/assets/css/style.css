@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+h1, h2{
+    font-size: 3.5rem;
+    padding-top: 45px;
+}
+h3{
+    
+    font-size: 2.5rem;
+    padding-top: 45px;
+}
+.p1{
+    font-size: 1.8rem;
+}
+.p2{
+    font-size: 1.2rem;
+    color: grey;
+    
+}
+.big{
+    height: 80%;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+header{
+    background-image: url("https://www.apple.com/v/home/en/images/heroes/iphone-11-pro/hero__dvsxv8smkkgi_large.jpg");
+    color: white;
+}
+#iphone{
+    background-image: url("https://www.apple.com/v/home/en/images/heroes/iphone-11/hero__dvsxv8smkkgi_large.jpg");
+    color: black;
+}
+#swatch{
+    background-image: url("https://www.apple.com/v/home/en/images/heroes/watch-series-5/hero__dvsxv8smkkgi_large.jpg");
+    color: black;
+}
+.duo{
+    height: 80%;
+    background-position: center;
+    color: black;
+    text-align: center;
+    margin-bottom: 1em;
+    display: flex;
+    width: 100%;
+}
+.small{
+    height: 100%;
+    background-position: center;
+    color: black;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 50%;
+}
+#arcade{
+    background-image: url("https://www.apple.com/v/home/en/images/promos/apple-arcade-avail/tile__cauwwcyyn9hy_large.jpg");
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#studio{
+    background-image: url("https://www.apple.com/v/home/en/images/promos/apple-watch-studio/tile__cauwwcyyn9hy_large.jpg");
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#ios{
+    background-image: url("https://www.apple.com/v/home/en/images/promos/ios-13/tile__cauwwcyyn9hy_large.jpg");
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#wos{
+    background-image: url("https://www.apple.com/v/home/en/images/promos/watchos/tile__cauwwcyyn9hy_large.jpg");
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#ipad{
+    background-image: url("https://www.apple.com/v/home/en/images/promos/ipad/tile__cauwwcyyn9hy_large.jpg");
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#mac{
+    background-image: url("https://www.apple.com/fr/home/images/promos/back-to-school/tile__cauwwcyyn9hy_large.jpg");
+    margin-left: 5px;
+    margin-right: 10px;
+}

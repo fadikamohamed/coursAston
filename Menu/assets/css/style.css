@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+div{
+    width: 100%;
+}
+ul{
+    display: flex;
+    text-align: center;
+    background-color: gray;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    height: 30px;
+}
+.first{
+    position: relative;
+    margin: 0;
+}
+.first:hover{
+    background-color: white;
+}
+.first:hover .seconde{
+    display: block;
+}
+.seconde{
+    position: absolute;
+    display: none;
+    width: 100%;
+    
+}
+.seconde li{
+    display: block;
+    width: 100%;
+    margin: 0;
+    color: black;
+    height: 30px;
+}
+li:hover{
+    background-color: white;
+}

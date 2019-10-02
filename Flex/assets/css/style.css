@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F4F4F4;
+}
+header{
+    background-color: #E60012;
+    height: 10.5vh;
+}
+.h{    
+    align-content: space-between;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.nav{    
+    background-color:E60012;
+    width: 12.5vw;
+    height: 89.5vh;
+}
+.content{
+    position: relative;
+    padding: 5px;
+    display: flex;
+    background-color: white;
+    width: 148vw;
+    height: 90vh;
+}
+.triple{    
+    flex: 3 1 auto;
+    height: 55vh;
+}
+.triple img{
+    padding-left: 0;
+}
+.double{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.zelda{
+    width: 100%;
+    height: 100%;
+    flex: auto;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    clear: both;
+}
+.dq11{
+    width: 50%;
+    flex: auto;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.ring{    
+    width: 50%;
+    flex: auto;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.promo{    
+    flex: 2 1 auto;
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.content img:hover{
+    top: 0px;
+    position: relative;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.news{    
+    width: 33.3333%;
+    background: none;
+    padding-top: 5px;
+}
+.title-box{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 5px;
+}
+.title{
+    border-left: 4px solid #F4F4F4;
+    align-items: center;
+    margin: 5px;
+}
+.news-box{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.news{
+    align-items: center;
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.news-box{
+    display: flex;
+}
+.news-box img{
+    width: 50%;
+    height: 100px;
+    padding: 7px;
+    flex: 1 1 auto;
+}
+.news-box .news{
+    width: 100%;
+    flex: 2 2 auto;
+}
+.news-box .date{
+    color: grey;
+    align-items: center;
+    margin: 5px;
+    font-size: 0.7rem;
+}
+.news-box .comment{
+    align-items: center;
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+li{
+    list-style: none;
+    width: 100%;
+    min-height: 80px;
+    border-top-right-radius: 10px;
+    background-color: #E60012;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+    color: white;
+}
+.nav img{
+    width: 50%;
+    padding-top: 20%;
+}
