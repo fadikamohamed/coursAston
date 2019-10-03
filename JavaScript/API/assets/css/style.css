@@ -2,34 +2,58 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #F9F9F9;
+}
 nav {
-  height: 9vh;
+  height: 60px;
   background-color: #222222;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+  list-style: none;
+  justify-content: center;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+nav ul li img {
+  display: block;
+  margin: auto;
+  width: 30px;
 }
 .container {
   width: 100%;
 }
 .container .topPage {
-  height: 62vh;
+  height: 440px;
   background-color: #2C2E31;
+  text-align: center;
 }
 .container .topPage h1 {
   color: white;
-  text-align: center;
-  padding-top: 50px;
-  font-size: 3rem;
-  font-weight: 300;
+  padding-top: 40px;
+  font-size: 48px;
+  font-weight: 100;
 }
 .container .topPage p {
   color: white;
-  text-align: center;
-  font-size: 1.3rem;
+  font-size: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 .container .topPage p a {
   color: #0088AA;
 }
 .container .topPage a {
-  text-align: center;
   color: grey;
 }
 .container .topPage a img {
@@ -39,8 +63,8 @@ nav {
 .container #target {
   margin: auto;
   background-color: white;
-  width: 47vw;
-  height: 500vh;
+  width: 730px;
+  height: 500px;
   margin-top: -195px;
 }
 .container #target .targetTop {
@@ -73,4 +97,21 @@ nav {
 .container #target .parag .data {
   font-size: 3rem;
   text-align: center;
+}
+.container #target .dataNav {
+  margin-top: 30px;
+}
+.container #target ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.container #target ul li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  cursor: pointer;
 }
