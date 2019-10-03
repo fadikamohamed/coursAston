@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+.container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#cible {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+div .bierre {
+    width: 25%;
+    display: inline-block;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    
+}
+p{
+    width: 60%;
+    text-align: center;
+}

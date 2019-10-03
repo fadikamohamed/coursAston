@@ -1,12 +1,14 @@
 .topPage{
-    display: flex;
+    display: block;
     width: 100%;
     border: 1px solid black;
-    justify-content: center;
 }
 #game{
+    display: fle
+    x;
     width: 50vw;
     border: 1px solid black;
+    align-content: center;
 }
 .line{
     display: flex;
@@ -18,5 +20,5 @@
     background-color: grey;
 }
 img{
-    width: 50px;
+    width: 200px;
 }

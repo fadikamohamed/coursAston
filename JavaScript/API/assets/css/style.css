@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  height: 9vh;
+  background-color: #222222;
+}
+.container {
+  width: 100%;
+}
+.container .topPage {
+  height: 62vh;
+  background-color: #2C2E31;
+}
+.container .topPage h1 {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.container .topPage p {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.container .topPage p a {
+  color: #0088AA;
+}
+.container .topPage a {
+  text-align: center;
+  color: grey;
+}
+.container .topPage a img {
+  width: 30px;
+  margin-bottom: -10px;
+}
+.container #target {
+  margin: auto;
+  background-color: white;
+  width: 47vw;
+  height: 500vh;
+  margin-top: -195px;
+}
+.container #target .targetTop {
+  background-color: #F9F9F9;
+  width: 100%;
+  height: 18vh;
+  border-bottom: 1px solid #DCDCDC;
+  display: flex;
+  justify-content: center;
+}
+.container #target .targetTop img {
+  background-color: white;
+  width: 155px;
+  height: 155px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  border-radius: 100px;
+  border: 1px solid #DCDCDC;
+  padding: 4px;
+}
+.container #target .parag {
+  width: 100%;
+  margin-top: 90px;
+}
+.container #target .parag .label {
+  color: #999999;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.container #target .parag .data {
+  font-size: 3rem;
+  text-align: center;
+}
