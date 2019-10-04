@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
         <label for="">
             Tache :
             <input id="inputTask" type="text">
@@ -18,8 +17,7 @@
             Date : 
             <input id="inputDate" type="date">
         </label>
-        <button id="submitf" type="submit" onclick="submitf()">Enregistrer</button>
-    </form>
+        <button id="submitTask" type="submit">Enregistrer</button>
     <table class="table table-dark">
             <thead>
               <tr>
@@ -29,10 +27,7 @@
                 <th scope="col">Supprimer</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-              </tr>
+            <tbody id="target">
             </tbody>
           </table>
     <script src="assets/js/script.js"></script>
