@@ -14,11 +14,11 @@ class Tasks{
         this.inputTask = inputTask;
     }
     setInputDateTask(){
-        this.inputDateTask = inputDateTaskss;
+        this.inputDateTask = inputDateTask;
     }
 }
-let submit = document.getElementById('submit');
-submit.onclick() = function(){
+
+function submitf (){
     let inputTask = document.getElementById('inputTask').value;
     let inputDateTask = document.getElementById('inputDate').value;
 
