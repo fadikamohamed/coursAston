@@ -1,0 +1,85 @@
+@fond:#F9F9F9;
+@bordure: #E8E9EA;
+@image:150px;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+body{
+    background-color: @fond;
+}
+.bandeauGris{
+    width: 100vw;
+    height: 500px;
+    background-color: grey;
+}
+.boite{
+    text-align: center;
+    width: 730px;
+    margin: auto;
+    margin-top: -250px;
+    background-color: white;
+    .partTop{
+        background-color: @fond;
+        border-bottom:0.5px solid @bordure;
+        height: 150px;
+    }
+     #image{
+        margin: auto;
+        margin-top: -105px;
+        border-radius: @image;
+        height: @image;
+        width: @image;
+        border: 1px solid @bordure;
+        padding: 5px;
+        background-color: white;
+    }
+    #label{
+        margin-top: 30px;
+        font-size: 1.2rem;
+        color: grey;
+    }
+    #info{
+        margin-top: 20px;
+        font-size:2rem;
+        color: black;
+    }
+    .icones{
+        width:480px;
+        margin: auto;
+    }
+    .icone{
+        float: left;
+        width:40px;
+        height: 48px;
+        transition: 0.2s all ease;
+        cursor: pointer;
+        margin: 20px;
+    }
+    
+    #people{
+        background: url('./card_icons.png') no-repeat 0px -48px;
+        background-size: 376px;
+    }
+    #people:hover{
+        background-position: 0px 0px;
+    } 
+    #email{
+        background: url('./card_icons.png') no-repeat -70px -48px;
+        background-size: 376px;
+    }
+    #email:hover{
+        background-position: -70px 0px;
+    } 
+    #calendar{
+        background: url('./card_icons.png') no-repeat -140px -48px;
+        background-size: 376px;
+    }
+    #calendar:hover{
+        background-position: -140px 0px;
+    }
+}

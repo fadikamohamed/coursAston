@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+body {
+  background-color: #F9F9F9;
+}
+.bandeauGris {
+  width: 100vw;
+  height: 500px;
+  background-color: grey;
+}
+.boite {
+  text-align: center;
+  width: 730px;
+  margin: auto;
+  margin-top: -250px;
+  background-color: white;
+}
+.boite .partTop {
+  background-color: #F9F9F9;
+  border-bottom: 0.5px solid #E8E9EA;
+  height: 150px;
+}
+.boite #image {
+  margin: auto;
+  margin-top: -105px;
+  border-radius: 150px;
+  height: 150px;
+  width: 150px;
+  border: 1px solid #E8E9EA;
+  padding: 5px;
+  background-color: white;
+}
+.boite #label {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: grey;
+}
+.boite #info {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: black;
+}
+.boite .icones {
+  width: 480px;
+  margin: auto;
+}
+.boite .icone {
+  float: left;
+  width: 40px;
+  height: 48px;
+  transition: 0.2s all ease;
+  cursor: pointer;
+  margin: 20px;
+}
+.boite #people {
+  background: url('card_icons.png') no-repeat 0px -48px;
+  background-size: 376px;
+}
+.boite #people:hover {
+  background-position: 0px 0px;
+}
+.boite #email {
+  background: url('card_icons.png') no-repeat -70px -48px;
+  background-size: 376px;
+}
+.boite #email:hover {
+  background-position: -70px 0px;
+}
+.boite #calendar {
+  background: url('card_icons.png') no-repeat -140px -48px;
+  background-size: 376px;
+}
+.boite #calendar:hover {
+  background-position: -140px 0px;
+}

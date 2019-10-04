@@ -1,29 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #F9F9F9;
 }
-nav{
+
+nav {
     height: 60px;
     background-color: #222222;
     display: flex;
     justify-content: center;
 
-    ul{
+    ul {
         display: flex;
-        li{
+
+        li {
             margin-right: 20px;
             list-style: none;
             justify-content: center;
-            a{              
-            margin-top: 40px;  
-            color: white;
-            display: block;
-            text-decoration: none;s
+
+            a {
+                color: white;
+                display: block;
+                text-decoration: none;
             }
-            img{
+
+            img {
                 display: block;
                 margin: auto;
                 width: 30px;
@@ -31,49 +35,61 @@ nav{
         }
     }
 }
-.container{
+
+.container {
     width: 100%;
-    .topPage{
+
+    .topPage {
         height: 440px;
         background-color: #2C2E31;
         text-align: center;
-        h1{
+
+        h1 {
             color: white;
             padding-top: 40px;
             font-size: 48px;
             font-weight: 100;
         }
-        p{
+
+        p {
             color: white;
             font-size: 18px;
             margin-top: 18px;
             margin-bottom: 18px;
-            a{
+
+            a {
                 color: #0088AA;
             }
         }
-        a{            
+
+        a {
             color: grey;
-            img{
+
+            img {
                 width: 30px;
                 margin-bottom: -10px;
             }
         }
     }
-    #target{
+
+    #target {
+        border-radius: 3px;
         margin: auto;
         background-color: white;
         width: 730px;
         height: 500px;
         margin-top: -195px;
-        .targetTop{
+
+        .targetTop {
+            border-radius: 3px;
             background-color: #F9F9F9;
             width: 100%;
-            height: 18vh;
+            height: 135px;
             border-bottom: 1px solid #DCDCDC;
             display: flex;
             justify-content: center;
-            img{
+
+            img {
                 background-color: white;
                 width: 155px;
                 height: 155px;
@@ -84,34 +100,89 @@ nav{
                 padding: 4px;
             }
         }
-        .parag{
+
+        .parag {
             width: 100%;
             margin-top: 90px;
-            .label{
+
+            .label {
                 color: #999999;
                 font-size: 1.3rem;
                 text-align: center;
             }
-            .data{
+
+            .data {
                 font-size: 3rem;
                 text-align: center;
             }
         }
-        .dataNav{
-            margin-top: 30px;
+
+        .dataNav {
+            margin-top: 18px;
         }
-        ul{
+
+        ul {
             display: flex;
             flex-wrap: wrap;
             padding-left: 15%;
             padding-right: 15%;
-            li{
+
+            li {
                 list-style: none;
                 width: 50px;
                 height: 50px;
-                border: 1px solid black;
                 margin: auto;
                 cursor: pointer;
+                background-image: url("../img/card_icons.png");
+                background-size: 400px;
+            }
+            .transition{
+                transition: 0.1s all ease;
+            }
+            .transitionHover{                
+                background-position-y: -103px;
+            }
+            #name{                
+                background-position: 4px -53px;
+                .transition;
+            }
+            #name:hover{
+                .transitionHover;
+            }
+            #email{
+                background-position: -68px -53px;
+                .transition;
+            }
+            #email:hover{
+                .transitionHover;
+            }
+            #birthday{
+                background-position: -139px -53px; 
+                .transition;               
+            }
+            #birthday:hover{
+                .transitionHover;
+            }
+            #address{
+                background-position: -211px -53px;
+                .transition;                                
+            }
+            #address:hover{
+                .transitionHover;
+            }
+            #phone{
+                background-position: -284px -53px; 
+                .transition;                               
+            }
+            #phone:hover{
+                .transitionHover;
+            }
+            #password{
+                background-position: -354px -53px; 
+                .transition;                               
+            }
+            #password:hover{
+                .transitionHover;
             }
         }
     }
