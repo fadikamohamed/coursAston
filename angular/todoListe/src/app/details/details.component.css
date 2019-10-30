@@ -1,0 +1,116 @@
+.checked {
+  width: 5px;
+  height: 5px;
+  border: 2px solid black;
+}
+.checkedBox {
+  margin: auto;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.groupBox {
+  margin: auto;
+  border-radius: 10px;
+  width: 15px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.grey {
+  border-color: #726F70;
+  margin: auto;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.green {
+  border-color: #8ADAD6;
+  margin: auto;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.orange {
+  border-color: #F88F58;
+  margin: auto;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.blue {
+  border-color: #6E81BE;
+  margin: auto;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.orange {
+  border-color: #F25F66;
+  margin: auto;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.groupGrey {
+  border-color: #726F70;
+  background-color: #726F70;
+  margin: auto;
+  border-radius: 10px;
+  width: 15px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.groupGreen {
+  border-color: #8ADAD6;
+  background-color: #8ADAD6;
+  margin: auto;
+  border-radius: 10px;
+  width: 15px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.groupOrange {
+  border-color: #F88F58;
+  background-color: #F88F58;
+  margin: auto;
+  border-radius: 10px;
+  width: 15px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.groupBlue {
+  border-color: #6E81BE;
+  background-color: #6E81BE;
+  margin: auto;
+  border-radius: 10px;
+  width: 15px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}
+.groupOrange {
+  border-color: #F25F66;
+  background-color: #F25F66;
+  margin: auto;
+  border-radius: 10px;
+  width: 15px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+}

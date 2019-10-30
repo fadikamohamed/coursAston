@@ -1,0 +1,8 @@
+<div>
+    <p [ngClass]="{'red': bg == 'red', 'grey': bg == 'grey', 'green': bg == 'green', 'blue': bg == 'blue', 'hide': login == true }">
+        {{ personne.nom }} - {{ personne.age }}
+         <button (click)="clickB()" *ngIf="login == false">
+             X
+            </button>
+        </p>
+</div>

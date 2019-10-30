@@ -1,0 +1,15 @@
+<div>
+    <table class="table table-striped">
+        <tr>
+            <td class="col-2"><div (click)="addIn(i)" [ngClass]="[liste.color]"></div></td>
+            <td class="col">{{liste.element}}</td>
+            <td class="col-2">
+                <span class="groupGrey col"></span>
+                <span class="groupGreen col"></span>
+                <span class="groupOrange col"></span>
+                <span class="groupBlue col"></span>
+            </td>
+            <td class="col"><button (click)="delete(i)"> X </button></td>
+        </tr>
+    </table>  
+</div>
