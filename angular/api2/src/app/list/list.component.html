@@ -1,0 +1,3 @@
+<div *ngFor="let beer of beers">
+    <a [routerLink]="['detail', beer.id]">{{ beer.name }}</a>
+</div>
