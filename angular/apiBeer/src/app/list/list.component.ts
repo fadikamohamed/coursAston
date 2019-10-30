@@ -21,4 +21,8 @@ export class ListComponent implements OnInit {
         this.beers = data;
       })
   }
+
+  addBeer(f){
+    this.beersService.addBeer(f.form.value);
+  }
 }

@@ -2,13 +2,23 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHandler } from '@angular/common/http';
 import { throwError as observableThrowError,  Observable } from 'rxjs';
 import { map, tap, catchError } from 'rxjs/operators';
+import { HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BeersService {
 
-  constructor(private http: HttpClient) { }
+  httpOptions;
+  constructor(private http: HttpClient) {
+
+    this.httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+      })
+    };
+    
+   }
 
   getBeers():Observable<any>{
     return this.http.get<any>('https://beers-cf53e.firebaseio.com/beers.json')
@@ -18,6 +28,15 @@ export class BeersService {
         }),
         catchError(this.handleError('getBeers', []))
       )
+  }
+
+  addBeer(beer):Observable<any> {
+    console.log(beer);
+    return this.http.post<any>('https://beers-cf53e.firebaseio.com/beers.json', beer)
+      .pipe(
+        catchError(this.handleError('addBeer', beer))
+      );
+      
   }
 
   getBeer(key):Observable<any>{
