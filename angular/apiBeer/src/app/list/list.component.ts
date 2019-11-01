@@ -9,10 +9,12 @@ import { BeersService } from '../beers.service';
 export class ListComponent implements OnInit {
 
   beers;
+  key;
   constructor(private beersService:BeersService) { }
 
   ngOnInit() {
     this.getBeers();
+    this.deleteBeer(this.key);
   }
 
   getBeers(){
@@ -23,6 +25,19 @@ export class ListComponent implements OnInit {
   }
 
   addBeer(f){
-    this.beersService.addBeer(f.form.value);
+    this.beersService.addBeer(f.form.value)
+    .subscribe(() => this.getBeers());
+  }
+
+  deleteBeer(key){
+    this.beersService.deleteBeer(key)
+    .subscribe(() => this.getBeers());
+  }
+
+  searchBeer(value){
+    this.beersService.searchBeers(value)
+    .subscribe(data => {
+      this.beers = data;
+    })
   }
 }

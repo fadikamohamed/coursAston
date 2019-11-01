@@ -6,6 +6,10 @@
         <input type="text" [ngModel]="price" name="price">
         <button type="submit">Ajouter</button>
   </form>
+  <form (ngSubmit)="searchBeer(s)" #s="ngForm">
+    <input type="text" [ngModel]="value" name="value">
+    <button type="submit">Rechercher</button>
+  </form>
 <table class="table table-striped content">
         <thead>
           <tr>
@@ -18,6 +22,8 @@
             <td>{{ beer.value.name }}</td>
             <td>{{ beer.value.price }}</td>
             <td><a [routerLink]="['detail', beer.key]"><button>Details</button></a></td>
+            <td><button (click)="editBeer(beer.key)">Editer</button></td>
+            <td><a (click)="deleteBeer(beer.key)"><button>Supprimer</button></a></td>
           </tr>
         </tbody>
       </table>

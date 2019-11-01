@@ -1,1 +1,13 @@
-{{beers.name}}
+{{key}}
+<form (ngSubmit)="editBeer(key, f)" #f="ngForm">
+    <label for="">Name</label>
+    <input type="text" [ngModel]="name" name="name">
+    <label for="">Price</label>
+    <input type="text" [ngModel]="price" name="price">
+    <button type="submit">Ajouter</button>
+</form>
+<p>{{beers.name}}</p>
+<p>{{beers.price}}</p>
+<p>{{beers.degree}}</p>
+<p>{{beers.date}}</p>
+

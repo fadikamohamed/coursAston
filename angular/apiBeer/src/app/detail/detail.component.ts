@@ -27,4 +27,9 @@ export class DetailComponent implements OnInit {
         this.beers = data;
       })
   }
+
+  editBeer(key, f){
+    this.beerService.editBeer(key, f.form.value)
+    .subscribe(() => this.getBeer(key));
+  }
 }
