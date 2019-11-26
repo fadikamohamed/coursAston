@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Photo de chat</ion-title>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-button (click)="randomChat()">Nouveau chat</ion-button>
+  <ion-slide *ngIf="chat">
+    <ion-img [src]="chat" alt=""></ion-img>
+  </ion-slide>
+</ion-content>

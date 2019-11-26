@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Gallerie photo</ion-title>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-slides>
+    <ion-slide *ngFor="let photos of photo">
+        <ion-img [src]="photos"></ion-img>
+    </ion-slide>
+    <ion-slide>slide</ion-slide>
+  </ion-slides>
+</ion-content>

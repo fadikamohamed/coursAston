@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Meteo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item class="box">
+  <ion-list *ngIf="meteo">
+      <ion-item>
+        <ion-label>Ville : {{ meteo.city.name }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pays : {{ meteo.city.country }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Temps : {{ meteo.list[0].weather[0].description }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Temperature : {{ meteo.list[0].main.temp }}°</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>coordonés : lon {{ meteo.city.coord.lon }} | lat {{ meteo.city.coord.lat }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Humidité : {{ meteo.list[0].main.humidity }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Vent : {{ meteo.list[0].wind.speed }} km/h</ion-label>
+      </ion-item>
+  </ion-list>
+</ion-item>
+<form [formGroup]="form" (ngSubmit)="getByCity()">
+  <ion-item>
+    <ion-label>city</ion-label>
+    <ion-input type="text" formControlName="city"></ion-input>
+  </ion-item>
+  <ion-button type="submit">Valider</ion-button>
+</form>
+<form [formGroup]="form" (ngSubmit)="getMeteo()">
+  <ion-item>
+    <ion-label>city</ion-label>
+    <ion-input type="text" formControlName="city"></ion-input>
+  </ion-item>
+  <ion-button type="submit">Valider</ion-button>
+</form>
+</ion-content>
