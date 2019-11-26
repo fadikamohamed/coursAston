@@ -1,0 +1,8 @@
+<ion-slide>
+  <ion-item>
+    <ion-slide *ngFor="let astrs of astr">
+      <ioin-img [src]="astrs.url"></ioin-img>
+      <ioin-label>{{ astr.explanation }}</ioin-label>
+    </ion-slide>
+  </ion-item>
+</ion-slide>

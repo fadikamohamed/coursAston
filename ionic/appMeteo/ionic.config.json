@@ -1,5 +1,7 @@
 {
   "name": "appMeteo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
